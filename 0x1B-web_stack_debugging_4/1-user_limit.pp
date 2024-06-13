@@ -1,4 +1,4 @@
-ncrease the file limit of user 'Holberton'
+# increase the file limit of user 'Holberton'
 
 exec { 'fix_limit_hbton_user':
   command => 'sed -i "/holberton hard/s/5/10000/" /etc/security/limits.conf',
